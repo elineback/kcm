@@ -2,13 +2,18 @@
 public class Elevator {
 
     private Long id;
-    private int current_floor;
+    private int currentFloor;
     private int destination;
+    private int direction;// 0 for up and 1 for down
     private Boolean occupied;
     private Boolean onTrip;
     private int totalTrips;
     private int totalFloorsTraveled;
     private Boolean operational;
+
+    public Elevator(int currentFloor) {
+        this.currentFloor = currentFloor;
+    }
 
     public Long getId() {
         return id;
@@ -18,12 +23,12 @@ public class Elevator {
         this.id = id;
     }
 
-    public int getCurrent_floor() {
-        return current_floor;
+    public int currentFloor() {
+        return currentFloor;
     }
 
-    public void setCurrent_floor(int current_floor) {
-        this.current_floor = current_floor;
+    public void setCurrentFloor(int currentFloor) {
+        this.currentFloor = currentFloor;
     }
 
     public int getDestination() {
