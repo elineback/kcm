@@ -4,12 +4,14 @@ public class Elevator {
     private Long id;
     private int currentFloor;
     private int destination;
+    private int numberOfCurrentDestinations;
     private int direction;// 0 for up and 1 for down
     private Boolean occupied;
     private Boolean onTrip;
     private int totalTrips;
     private int totalFloorsTraveled;
     private Boolean operational;
+    private int numberOfSummonsCurrentlyServing;
 
     public Elevator(int currentFloor) {
         this.currentFloor = currentFloor;

@@ -18,21 +18,29 @@ public class Main {
 
     public void processSummons(int floorSummons, List<Elevator> elevators){
 
+        //First would actually be if an elevator has this as a current destination.
+        //if yes then add this summons/destination to this elevator
 
-        //Check first if occupied and will be passing floor since this elevator will be moving
+
+        //if not
+        //Second check would be if no elevator has this current destination then check
+        // if occupied and will be passing floor since this elevator will be moving
         // and needs to be returned first if available
         //First filter by occupied
         List<Article> filteredArticleList= elevators.stream().filter(e -> e.getOccupied.isTrue.collect(Collectors.toList());
 
-        //Second compare floor destination against summons and see if on the way
+        //Second compare floor destination against summons and see if on the way and using the direction of elevator
         elevators.forEach( e -> {
-            int e.getDestination - e.getCurrentFloor
+
         })
 
         //If no occupied elevator is passing this floor then check for nearest non-occupied elevator
         //First sort list by floor
         Collections.sort(elevators, Comparator.comparingInt(Elevator::getCurrentFloor));
 
+
+        //once elevator is committed change elevator update elevators attributes here
+        // update occupied, numberOfsummonCurrentlyServing and direction
 
     }
 }
